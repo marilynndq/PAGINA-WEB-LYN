@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyn Studio | Marilynn Díaz</title>
+    <!-- Fuentes de Google: Montserrat para textos, Shadows Into Light para el toque manuscrito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Iconos para las redes sociales y flechas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CAPA DE LÍNEAS DINÁMICAS (Fondo en movimiento para toda la web) -->
+    <div class="background-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- NAV BAR (Cabecera fija) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper-img">
+                <a href="#inicio">
+                    <img src="img/logo.png" alt="Lyn Studio Logo" class="nav-logo-file">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#sobre-mi" class="nav-link active">sobre mi</a>
+                <a href="#servicios" class="nav-link">servicios</a>
+                <a href="#portafolio" class="nav-link">portafolio</a>
+                <a href="#contacto" class="btn-contact-nav">contactame</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN 1: INICIO / HERO CON CARRUSEL -->
+    <section id="inicio" class="hero-section">
+        <div class="carousel-container">
+            
+            <!-- SLIDE 1: Caricatura + Logo Grande -->
+            <div class="carousel-slide active">
+                <div class="hero-container">
+                    <div class="hero-left-avatar">
+                        <img src="img/yo.png" alt="Lyn Avatar" class="avatar-img">
+                    </div>
+                    <div class="hero-right-content">
+                        <div class="logo-large-wrapper">
+                            <img src="img/logo.png" alt="Lyn Studio Gigante" class="hero-logo-file-large">
+                        </div>
+                        <a href="#portafolio" class="btn-portfolio-hero">ver portafolio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2: Cuadro de la Frase Estratégica -->
+            <div class="carousel-slide">
+                <div class="hero-container single-box-layout">
+                    <div class="tagline-box-carousel">
+                        <h1>Diseño estratégico que conecta y da vida a marcas digitales.</h1>
+                        <a href="#portafolio" class="btn-portfolio-hero box-btn">ver portafolio</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de navegación del carrusel (Puntitos inferiores) -->
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: SOBRE MÍ -->
+    <section id="sobre-mi" class="about-section">
+        <div class="about-container">
+            <div class="about-images">
+                <div class="photo-wrapper">
+                    <img src="img/doble.png" alt="Marilynn Díaz con Celular" class="photo-left">
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="title-impact">MARILYNN <span class="dark-text">DÍAZ</span></h2>
+                <p>Hola soy <strong>Marilynn Díaz</strong>, tengo 23 años y soy estudiante de Publicidad y Marketing Digital. Siempre me ha apasionado la creatividad, el diseño y la forma en que las ideas pueden transmitir emociones y conectar con las personas. Me considero una persona creativa, detallista y apasionada por crear proyectos con identidad propia y una estética auténtica.</p>
+                <p><strong>Lyn Studio</strong> nace como un espacio donde la creatividad, el estilo y la inspiración se unen para dar vida a ideas únicas. Este proyecto representa mi esencia y mi visión artística, enfocándose en crear contenido visual moderno, elegante y con personalidad. Más que una marca, Lyn Studio busca transmitir autenticidad y convertir cada detalle en una experiencia visual memorable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: SERVICIOS -->
+    <section id="servicios" class="services-section">
+        <h2 class="section-title-global">mis <span class="script-font">servicios</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                <p>Desarrollo contenido creativo y estratégico para redes sociales que conecte con la audiencia y fortalezca la presencia digital de las marcas.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-camera"></i></div>
+                <p>Planifico estrategias digitales enfocadas en mejorar el alcance, la interacción y el posicionamiento de marcas en redes sociales.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                <p>Diseño identidades visuales coherentes que transmiten la esencia de cada marca mediante colores, tipografías y elementos gráficos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4: PORTAFOLIO (Carrusel de 2 Cuadros) -->
+    <section id="portafolio" class="portfolio-section">
+        <h2 class="section-title-global white-text">mi <span class="script-font">portafolio</span></h2>
+        
+        <div class="portfolio-slider-wrapper">
+            <!-- Botón Izquierdo -->
+            <button class="portfolio-btn prev-btn" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <!-- Ventana contenedora -->
+            <div class="portfolio-carousel-window">
+                <div class="portfolio-track">
+                    
+                    <div class="portfolio-item-box">
+                        <img src="img/polafest.jpg" alt="Pola Fest Evento">
+                        <div class="overlay"><span>Ver Proyecto</span></div>
+                    </div>
+                    
+                    <div class="portfolio-item-box">
+                        <img src="img/accesorio.jpg" alt="fotografia Joyería">
+                        <div class="overlay"><span>Ver Proyecto</span></div>
+                    </div>
+                    
+                    <div class="portfolio-item-box">
+                        <img src="img/jabon.jpg" alt="Fotografia jabon">
+                        <div class="overlay"><span>Ver Proyecto</span></div>
+                    </div>
+                    
+                    <div class="portfolio-item-box">
+                        <img src="img/poster messi.jpg" alt="Poster Lionel Messi">
+                        <div class="overlay"><span>Ver Proyecto</span></div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Botón Derecho -->
+            <button class="portfolio-btn next-btn" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <h2 class="section-title-global white-text">hablemos <span class="script-font">aquí</span></h2>
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="logo-large-wrapper">
+                    <img src="img/logo.png" alt="Lyn Studio Footer" class="hero-logo-file-large">
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="https://github.com/marilynndq" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/lorenadiaz.10?igsh=MWd2dDR2cWZlc3Azdw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@lorenadiaz_10?_r=1&_t=ZS-94RfzoKRN7I" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/178bbTEG9t/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL (LIGHTBOX) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Vista ampliada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
