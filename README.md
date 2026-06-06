@@ -68,7 +68,7 @@ Estudiante de Publicidad y Marketing Digital.
 
 ### Repositorio GitHub
 
-(Pegar enlace aquí)
+https://marilynndq.github.io/PAGINA-WEB-LYN/
 
 ### Sitio Publicado
 
