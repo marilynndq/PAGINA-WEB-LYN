@@ -72,4 +72,4 @@ https://marilynndq.github.io/PAGINA-WEB-LYN/
 
 ### Sitio Publicado
 
-(Pegar enlace de GitHub Pages aquí)
+https://marilynndq.github.io/PAGINA-WEB-LYN/
